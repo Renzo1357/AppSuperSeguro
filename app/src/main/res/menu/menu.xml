@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Home"
+            android:title="Inicio"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+        <item
+            android:id="@+id/Profile"
+            android:title="Perfil"
+            android:icon="@drawable/ic_round_person_24"/>
+
+        <item
+            android:id="@+id/Search"
+            android:title="Buscar"
+            android:icon="@drawable/ic_baseline_search_24"/>
+
+        <item
+            android:id="@+id/Notification"
+            android:title="Notificación"
+            android:icon="@drawable/ic_baseline_notifications_24"/>
+
+        <item
+            android:id="@+id/Gifts"
+            android:title="Invitar amigos"
+            android:icon="@drawable/ic_baseline_card_giftcard_24"/>
+
+        <item
+            android:id="@+id/Logout"
+            android:title="Cerrar sesión"
+            android:icon="@drawable/ic_baseline_login_24"/>
+
+    </group>
+
+</menu>

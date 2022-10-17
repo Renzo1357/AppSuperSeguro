@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment">
+
+    <fragment
+        android:id="@+id/google_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_search_24"
+        app:boxBackgroundColor="@color/white"
+        app:startIconTint="@color/black"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-10dp">
+
+        <RelativeLayout
+            android:id="@+id/RLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/background"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:src="@drawable/car"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tvPick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Comenzar"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvLocation01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cerca"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="S/. 25.00"
+                    android:textColor="@color/red"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2 min"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pago"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tvPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Payment"
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ticket"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tvPromo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Promo code"
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/otro"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tvOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Options"
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btResponse"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="sans-serif-black"
+            android:text="Solicitar"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellow"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_round_person_24"/>
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Renzo Portal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"/>
+    
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardView"
+        android:layout_below="@id/tvUser"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvCash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cash"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2500"
+            android:layout_marginLeft="65dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center_vertical"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
